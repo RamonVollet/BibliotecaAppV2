@@ -11,7 +11,7 @@ namespace BibliotecaApp.Views
         private LivroRepository _livroRepository = new LivroRepository();
         private UsuarioRepository _usuarioRepository = new UsuarioRepository();
 
-        //Variável de controle: 0 para cadastrar novo, maior que 0 se estiver editando/excluindo
+
         private int _idSelecionado = 0;
 
         public FormEmprestimo()
@@ -20,10 +20,10 @@ namespace BibliotecaApp.Views
 
             this.Load += FormEmprestimo_Load;
 
-            // Vincular o clique da tabela para carregar as informações nos campos
+            
             dgvEmprestimos.CellClick += dgvEmprestimos_CellClick;
 
-            //Vincular o clique do novo botão de excluir
+            
             btnExcluir.Click += btnExcluir_Click;
         }
 
